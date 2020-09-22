@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        
+        }
+        h1{
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Eita lasqueira</h1>
+    <script>
+    var n1 = Number.parseInt(prompt('Digite o primeiro número'))// O JavaScript precisa de um tratamento de variavel para conseguir fazer uma soma, pois o comando prompt ele retorna uma string
+    var n2 = Number(prompt('Digite o segundo número'))// pode ser usado um Numer.parseInt ou Float ou apenas o Number
+    //Caso seja necessario converter de number para string pode se usar o comando String(n) ou n.toString()
+    var s = n1+n2   
+    alert('A soma dos numeros são: '+n1+'+'+n2+'='+s)
+    alert(`A soma dos numeros são: ${n1} + ${n2} = ${s}`)// utilizando PlaceHolder 
+    </script>
+
+</body>
+</html>

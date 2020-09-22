@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Dom</title>
+    <style>
+        body{
+            background: aqua;
+            color: white;
+            font: normal 19pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+
+    <div>Clique em mim</div>
+    <div id="msg">Clica aqui mermao</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1] // pegando elementos pelo nome da tag
+        document.write(p1.innerText +'<br>') //Mostrando o elemento da variavel p1
+        document.write(p1.innerHTML + '<br>') //Mostrando o elemento com a formatação Strong
+        corpo.style.background = 'black' //Mudando o background
+        var p2 = document.getElementById('msg') //Pegando o elemento pelo Id
+        document.write(p2.innerText + ('<br>'))
+        //p2.innerText('Olaaa') ira mudar a mensagem Clica aqui mermao para Olaaa
+
+        //=========================================================================================================================//
+        // ID É REPRESENTADO POR #
+        // CLASSE É REPRESENTADO POR .
+        var p3 = document.querySelector('div#msg')
+        document.write(p3.innerText)
+
+    </script>
+</body>
+</html>
